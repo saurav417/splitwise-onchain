@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Page</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Segoe UI";
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+        }
+        .title{
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: green;
+            font-family: "Segoe UI";
+        }
+        .group{
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0px;
+            padding: 10px 0px;
+            font-size: 14px;
+            width: 300px;
+            height: 70px;
+            background-color: green;
+            color: black;
+            font-family: "Segoe UI";
+        }
+        .balance{
+            color: white;
+            font-family: "Segoe UI";
+            font-size: 14px;
+        }
+        .note{
+            color: white;
+            font-family: "Segoe UI";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="balance">Current Balance: <span id="bal">0.1 eth</span></span>
+        <div class="title">Groups</div>
+    </header>
+
+    <div class="container">
+        <button class="group"><a href="groupPayment.html">Group 1</a>
+            <pre>
+You Owe:      <span id="owe1">00.00 eth</span>
+            </pre>
+        </button>
+        <button class="group"><a href="groupPayment.html">Group 2</a>
+            <pre>
+You Owe:      <span id="owe2">00.00 eth</span>
+            </pre>
+        </button>
+        <button class="group"><a href="groupPayment.html">Group 3</a>
+            <pre>
+You Owe:      <span id="owe3">00.00 eth</span>
+            </pre>
+        </button>
+    </div>
+    <footer><span class="note">Click on the group number to proceed for payment!</span></footer>
+    <script>
+
+    </script>
+</body>
+</html>
